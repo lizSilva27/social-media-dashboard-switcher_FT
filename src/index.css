@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-Inter: Inter, sans-serif;
+
+  /* Colors */
+  --color-LimeGreen: hsl(163, 72%, 41%);
+  --color-BrightRed: hsl(356, 69%, 56%);
+  --color-Facebook: hsl(208, 92%, 53%);
+  --color-Twitter: hsl(203, 89%, 53%);
+  --color-Instagram_1: hsl(37, 97%, 70%);
+  --color-Instagram_2: hsl(329, 70%, 58%);
+  --color-YouTube: hsl(348, 97%, 39%);
+
+  /* Toggle */
+  --color-Toggle_1: hsl(210, 78%, 56%);
+  --color-Toggle_2: hsl(146, 68%, 55%);
+  --color-Toggle: hsl(230, 22%, 74%);
+
+  /* Dark theme */
+  --color-VeryDarkBlue_BG: hsl(230, 17%, 14%);
+  --color-VeryDarkBlue_Top_BG_Pattern: hsl(232, 19%, 15%);
+  --color-DarkDesaturatedBlue_Card_BG: hsl(228, 28%, 20%);
+  --color-CardBG_hover_dark: #333a56;
+  --color-DesaturatedBlue_Text: hsl(228, 34%, 66%);
+  --color-White_Text: hsl(0, 0%, 100%);
+
+  /* Light Theme */
+  --color-White_BG: hsl(0, 0%, 100%);
+  --color-VeryPaleBlue_Top_BG_Pattern: hsl(225, 100%, 98%);
+  --color-LightGrayishBlue_Card_BG: hsl(227, 47%, 96%);
+  --color-CardBG_hover_light: #e1e3f0;
+  --color-DarkGrayishBlue_Text: hsl(228, 12%, 44%);
+  --color-VeryDarkBlue_Text: hsl(230, 17%, 14%);
+
+  /* Break Pint Custom */
+  --breakpoint-Desktop: 1030px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.border-instagram {
+  border-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  ) 1;
+}
